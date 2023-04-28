@@ -3,15 +3,17 @@
 /*Formatação geral*/
 html {
     scroll-behavior: smooth;
-    overflow-x: hidden; 
+    overflow-x: hidden;
 }
 
-body{
+body {
     margin: 0%;
 }
-a{
+
+a {
     text-decoration: none;
 }
+
 /*Final da formatação global*/
 /*Formatação da navbar*/
 .header {
@@ -22,9 +24,9 @@ a{
 }
 
 
-li{
+li {
     font-family: 'Montserrat', sans-serif;
-    font-size:3vh;
+    font-size: 3vh;
     margin-left: 2vh;
 }
 
@@ -36,16 +38,18 @@ li{
 }
 
 /*Formatação do header container*/
-.header .container{
+.header .container {
     justify-content: center;
     align-items: center;
 }
-hr{
+
+hr {
     justify-content: right;
     height: 0.2vh;
     background-color: black;
     width: 55vw;
 }
+
 /*Formatação da navbar*/
 .navbar {
     color: #ffffff;
@@ -54,7 +58,8 @@ hr{
     width: 85vh;
     justify-content: space-around;
 }
-.header .navbar a{
+
+.header .navbar a {
     color: black;
 }
 
@@ -66,13 +71,15 @@ hr{
     height: 100vh;
     background-image: url(../../img/banner.gif);
     background-attachment: fixed;
-    background-size:cover;
+    background-size: cover;
 }
-.banner{
+
+.banner {
     width: 100%;
-    height: 100vh;
+    height: 90vh;
 }
-.banner .container img{
+
+.banner .container img {
     height: 30vh;
 }
 
@@ -84,16 +91,82 @@ hr{
     flex-direction: column;
 }
 
-.banner h1{
+.banner h1 {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 10vh;
     margin: 0;
 }
 
-.banner p{
+.banner p {
     font-family: 'Comfortaa', cursive;
     font-size: 5vh;
 
 }
-
 /*Final do Banner*/
+.blog{ 
+    display: flex;
+    width: auto;
+    height: auto;
+}
+.blog .container {
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    color: rgb(60, 60, 60);
+    flex-direction: column;
+    background-image: url(../../img/fundoBlog.png);
+    
+}
+.blog .container .tituloBlog{
+    width: auto;
+    height:auto;
+    align-items: center;
+}
+.blog .textoBlog{
+
+    flex-direction:row-reverse;
+
+}
+/*Inicio do blog*/
+/* .blog{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url(../../img/fundoBlog.png);
+} /* Definição do tamanho e altura do fundo e da cor  
+.blog .tituloBlog{
+    text-align: center;
+}/* Deixando o titulo blog no centro 
+.blog .tituloBlog img{
+    /* um espaçamento do blog da página 
+    margin-top: 5%;
+}
+.blog .tituloBlog h1{
+    margin: 0;
+    height: auto;
+}
+/* Arrumando o titulo historia 
+.blog .textoBlog{
+    height: 100vh;
+    width: 100%;
+}
+.subTituloBlog h1{
+    float: right;
+    text-align: center;
+    border-bottom: solid 1px #000;
+    width: 15vw;
+}
+.blog .texto p{
+   
+  
+    background-color: aqua;
+}
+.blog .texto {
+    width: 5%;
+    text-align: justify;
+    font-size: 25pt;
+    margin-left: 0%;
+}
+ */
+/*Final do blog*/
