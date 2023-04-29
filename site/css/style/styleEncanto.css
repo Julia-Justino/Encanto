@@ -19,21 +19,25 @@ a {
 .header {
     width: 100%;
     background-color: #ffffff;
-    border-bottom: 1px solid #ffffff;
+
 
 }
 
 
 li {
     font-family: 'Montserrat', sans-serif;
-    font-size: 3vh;
-    margin-left: 2vh;
+    font-size: 4vh;
+    margin-left: 4vh;
+    width: auto;
+}
+.navbar ul{
+    margin: 2% 0% 1% 0%;
 }
 
 /*Div centralizadora - formatação global*/
 .container {
     display: flex;
-    width: 80%;
+    width: 100%;
     margin: auto;
 }
 
@@ -44,7 +48,7 @@ li {
 }
 
 hr {
-    justify-content: right;
+    margin: auto;
     height: 0.2vh;
     background-color: black;
     width: 55vw;
@@ -52,11 +56,11 @@ hr {
 
 /*Formatação da navbar*/
 .navbar {
-    color: #ffffff;
     list-style: none;
     display: flex;
-    width: 85vh;
+    width: auto;
     justify-content: space-around;
+    padding: 0;
 }
 
 .header .navbar a {
@@ -72,6 +76,7 @@ hr {
     background-image: url(../../img/banner.gif);
     background-attachment: fixed;
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .banner {
@@ -80,13 +85,13 @@ hr {
 }
 
 .banner .container img {
-    height: 30vh;
+    height: 25vh;
 }
 
 .banner .container {
     justify-content: center;
     align-items: center;
-    height: 65%;
+    height: 75%;
     color: rgb(255, 250, 206);
     flex-direction: column;
 }
@@ -102,71 +107,123 @@ hr {
     font-size: 5vh;
 
 }
+
 /*Final do Banner*/
-.blog{ 
+
+/*Inicio do blog*/
+.paragrafoEspaco{
+    margin-left: 10%;
+}
+
+.blog {
     display: flex;
     width: auto;
     height: auto;
 }
+
 .blog .container {
-    flex-direction: column;
+    align-items: center;
     height: 100vh;
     width: 100%;
     color: rgb(60, 60, 60);
     flex-direction: column;
     background-image: url(../../img/fundoBlog.png);
-    
+    background-size: cover;
+    background-repeat: no-repeat;
+
 }
-.blog .container .tituloBlog{
+
+.blog .container h1 img {
     width: auto;
-    height:auto;
+    height: 36vh;
+    margin: 0%;
     align-items: center;
 }
-.blog .textoBlog{
 
-    flex-direction:row-reverse;
-
-}
-/*Inicio do blog*/
-/* .blog{
-    width: 100%;
-    height: 100vh;
+.blog .textoBlog {
     display: flex;
     flex-direction: column;
-    background-image: url(../../img/fundoBlog.png);
-} /* Definição do tamanho e altura do fundo e da cor  
-.blog .tituloBlog{
+    align-items: flex-end;
+    margin-left: 10%;
+    width: 90%;
+    height: 100vw;
+}
+
+.subTituloBlog h2{
+    margin: 0%;
     text-align: center;
-}/* Deixando o titulo blog no centro 
-.blog .tituloBlog img{
-    /* um espaçamento do blog da página 
-    margin-top: 5%;
-}
-.blog .tituloBlog h1{
-    margin: 0;
-    height: auto;
-}
-/* Arrumando o titulo historia 
-.blog .textoBlog{
-    height: 100vh;
-    width: 100%;
-}
-.subTituloBlog h1{
-    float: right;
-    text-align: center;
-    border-bottom: solid 1px #000;
+    border-bottom: solid 2px #000000;
     width: 15vw;
+    font-size: 8vh;
 }
-.blog .texto p{
-   
-  
-    background-color: aqua;
+
+.blog .texto p {
+    margin: 0% 4%;
 }
+
 .blog .texto {
-    width: 5%;
+    margin: 0%;
+    width: 72%;
     text-align: justify;
-    font-size: 25pt;
-    margin-left: 0%;
+    font-size: 6.2vh;
+    line-height: 10vh;
+
 }
- */
+
+.marcaBlog {
+    width: auto;
+    background-color: #DFCAFE;
+    border-radius: 50vw;
+}
+
 /*Final do blog*/
+/*Inicio Criação do blog*/
+.criacaoBlog{
+    height: 105vh;
+    width: 100%;
+    color: rgb(60, 60, 60);
+    background-image: url(../../img/fundoCriacaoBlog.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+}
+.criacaoBlog .container{
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    align-items:center;
+    margin: 0%;
+    width: 80%;
+    height: 85%;
+}
+.criacaoBlog .container hr{
+    margin: 3% 0%;
+    width: 55%;
+    height: 0.6%;
+    text-align: center;
+    background-color: #B19CD9;
+}
+.subtitulo_criacaoBlog{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    margin:4% 68% 0% 0%;
+    height: 15%;
+}
+.subtitulo_criacaoBlog h2{
+    border-bottom: solid 2px #000000;
+    width: 28vw;
+    font-size: 8vh;
+    margin: 0%;
+    padding: 0% 0% 0% 10%;
+}
+.texto_criacaoBlog{
+    width: 90%;
+    text-align: justify;
+    font-size: 4.26vh;
+    justify-content: center;
+    line-height: 8vh;
+}
+/*Final Criação do blog*/
