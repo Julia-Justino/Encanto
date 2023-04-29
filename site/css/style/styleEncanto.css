@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
 
 /*Formatação geral*/
 html {
@@ -8,6 +10,7 @@ html {
 
 body {
     margin: 0%;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 a {
@@ -96,11 +99,6 @@ hr {
     flex-direction: column;
 }
 
-.banner h1 {
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 10vh;
-    margin: 0;
-}
 
 .banner p {
     font-family: 'Comfortaa', cursive;
@@ -131,13 +129,12 @@ hr {
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
-
 }
 
 .blog .container h1 img {
     width: auto;
     height: 28vh;
-    margin: 0%;
+    margin-top: 25%;
     align-items: center;
 }
 .blog .container h1{
@@ -237,6 +234,7 @@ hr {
     width: 100%;
     color: rgb(60, 60, 60);
     background-image: url(../../img/fundoConheca.png);
+    background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -249,19 +247,22 @@ hr {
     flex-direction: column;
     align-items:center;
     margin: 0%;
-    width: 80%;
+    width: 100%;
     height: 50%; 
 }
+
 .conhecaMe .titulo h1 img{
     width: auto;
     height: 28vh;
+    margin: 4vh 0vh 4vh 0vh;
+}
+.conhecaMe .titulo h1{
     margin: 0%;
 }
-
 .conhecaMe .textoConheca{ 
-    width: 100%;
+    width: 80%;
     justify-content: center;
-    margin-left: 35%;
+    margin-left: 10%;
 }
 .conhecaMe .textoConheca p{
     line-height: 10vh;
@@ -269,4 +270,85 @@ hr {
     text-align: justify;
     margin: 0%;
 }
+.marcaConheca{
+    width: auto;
+    background-color: #ADD8E6;
+    border-radius: 50vw;
+}
 /*Final do conheça-me*/
+/*Inicio do conheça - me arte */
+.conhecaMe_arte {
+        align-items: center;
+        display: flex;
+        height: 100vh;
+        width: 100%;
+        color: rgb(60, 60, 60);
+        flex-direction: column;
+        background-image: url(../../img/fundoConheca01.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+}
+.conhecaMe_arte .titulo{
+    margin: 5% 0% 3% 18.2%;
+    text-align: left;
+    border-bottom: solid 2px #000000;
+    width: 50vw;
+    font-size: 4vh;
+}
+.conhecaMe_arte .central .titulo h2{
+    margin: 14% 0% 0% 4%;
+    font-size: 8vh;
+}
+.conhecaMe_arte .central .textoArte {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items:flex-end;
+    width: 100%;
+}
+.conhecaMe_arte .central .textoArte p{
+    width: 68%;
+    font-size: 5.2vh;
+    line-height: 10vh;
+    text-align: justify;
+    margin: 2% 2.5%;
+}
+/*Final do conheça - me arte*/
+/*Inicio do conheça - me arte 02*/
+.conhecaMe_arte02 {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    color: rgb(60, 60, 60);
+    flex-direction: column;
+    background-image: url(../../img/fundoConheca02.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.conhecaMe_arte02 .titulo{
+margin: 8% 0% 3% 48.4%;
+text-align: left;
+border-bottom: solid 2px #000000;
+width: 30%;
+font-size: 4vh;
+}
+.conhecaMe_arte02 .central .titulo h2{
+margin: 14% 0% 0% 8%;
+font-size: 8vh;
+}
+.conhecaMe_arte02 .central .textoArte {
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items:flex-start;
+width: 100%;
+}
+.conhecaMe_arte02 .central .textoArte p{
+width: 68%;
+font-size: 6.2vh;
+line-height: 10vh;
+text-align: justify;
+margin: 2% 2.5%;
+}
+/*Final do conheça - me arte 02*/
