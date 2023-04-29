@@ -128,6 +128,7 @@ hr {
     color: rgb(60, 60, 60);
     flex-direction: column;
     background-image: url(../../img/fundoBlog.png);
+    background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -135,9 +136,12 @@ hr {
 
 .blog .container h1 img {
     width: auto;
-    height: 36vh;
+    height: 28vh;
     margin: 0%;
     align-items: center;
+}
+.blog .container h1{
+    margin: 0%;
 }
 
 .blog .textoBlog {
@@ -227,3 +231,42 @@ hr {
     line-height: 8vh;
 }
 /*Final Criação do blog*/
+/*Inicio do conheça-me*/
+.conhecaMe{
+    height: 100vh;
+    width: 100%;
+    color: rgb(60, 60, 60);
+    background-image: url(../../img/fundoConheca.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+}
+.conhecaMe .titulo{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    margin: 0%;
+    width: 80%;
+    height: 50%; 
+}
+.conhecaMe .titulo h1 img{
+    width: auto;
+    height: 28vh;
+    margin: 0%;
+}
+
+.conhecaMe .textoConheca{ 
+    width: 100%;
+    justify-content: center;
+    margin-left: 35%;
+}
+.conhecaMe .textoConheca p{
+    line-height: 10vh;
+    font-size: 4.26vh;
+    text-align: justify;
+    margin: 0%;
+}
+/*Final do conheça-me*/
