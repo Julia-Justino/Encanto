@@ -516,6 +516,16 @@ hr {
     text-align: center;
     margin: 5% 40%;
 }
+.pesquisa .textoConheca button:hover{
+    background-color:#F9A7B0;
+    border:solid 2px #ea48ff;
+    margin: 3% 30%;
+    width: 30vw;
+    height: 8vh;
+    color: #FFFFFF;
+    transition: 1.0s;
+    font-size: 2.5vh;
+}
 /*Final da pesquisa*/
 /*Inicio do contato*/
 .contato {
@@ -540,8 +550,8 @@ hr {
     margin: 0% 15% 15vh 2%;
 }
 .contato .titulo img{
-    width: 90%;
-    height: 45vh;
+    width: 85%;
+    height: 35vh;
 }
 
 
@@ -558,26 +568,27 @@ hr {
 }
 .contato .formContato input{
    width: 35vw;
-   height: 5vh;
+   height: 5.8vh;
    border-radius: 32vw;
-   border:solid 2px #454645;
+   border:solid 2px #f5e0e0;
 }
 .contato .formContato button{
     width: 20vw;
     height: 7vh;
     background-color:#ffffff;
-    border:solid 2px #f7c9a0;
+    border:solid 2px #ffffff;
     border-radius: 50vw;
     text-align: center;
     margin: 8% 20% 0% 20%;
 }
 .contato .formContato h2{
-    font-size: 6.5vh;
-    margin: 0%;
+    font-size: 5.5vh;
+    width: 40vw;
+    text-align: center;
     color: #000000;
     font-family: 'Montserrat';
-    border-bottom: solid 0.4vh #000000;
-    margin: 10% 0% 2% 0%;
+    border-bottom: solid 0.4vh #272727;
+    margin: 10% 0% 4% 0%;
 }
 .contato .formContato p{
     margin: 5% 0% 1% 0%;
@@ -590,6 +601,7 @@ hr {
 }
 .detalheNuvem{
     display: flex;
+    height: 25vh;
     justify-content: flex-start;
     margin: 0% 90% 0% 0%;
 }
