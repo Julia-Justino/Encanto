@@ -16,6 +16,11 @@ body {
 a {
     text-decoration: none;
 }
+li:hover{
+    font-size: 5vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: 1.5s;
+}
 
 /*Final da formatação global*/
 /*Formatação da navbar*/
@@ -435,6 +440,17 @@ hr {
     align-items: center;
     margin: 0% auto;
 }
+.destaque .textoConheca .card:hover{
+    width: 35vw;
+    height: 18vw;
+    flex-direction: row;
+    display: flex;
+    margin: 5% 5% 0% 0%;
+    padding: 3% 0% 5% 0%;
+    background-color: #C6F4AD;
+    align-items: flex-start;
+    transition: 1s;
+}
 .destaque .textoConheca .card img{
     border-radius: 100%;
     width: 25%;
@@ -454,6 +470,16 @@ hr {
     border:solid 2px #72f103b6;
     border-radius: 50vw;
     margin-top: 3%;
+}
+.destaque .textoConheca .card button:hover{
+    width: 15vw;
+    height: 5vh;
+    background-color:#e7fff1e0;
+    border:solid 2px #616161;
+    border-radius: 50vw;
+    margin-top: 3%;
+    color: #6d6d6d;
+    transition: 2s;
 }
 
  #cardMeio {
@@ -580,6 +606,16 @@ hr {
     border-radius: 50vw;
     text-align: center;
     margin: 8% 20% 0% 20%;
+}
+.contato .formContato button:hover{
+    width: 35vw;
+    height: 7vh;
+    background-color:#ffaf7a;
+    border:solid 2px #696969;
+    border-radius: 50vw;
+    text-align: center;
+    margin: 8% 0% 0% 0%;
+    transition: 1s;
 }
 .contato .formContato h2{
     font-size: 5.5vh;
