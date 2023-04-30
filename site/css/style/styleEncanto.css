@@ -460,5 +460,137 @@ hr {
     background-color: #B2DF8A;  
     margin: 0% 5% 0% 0%;
 }
-
 /*Final do destaque*/
+/*Inicio da pesquisa*/
+.pesquisa {
+    height: 100vh;
+    width: 100%;
+    color: rgb(60, 60, 60);
+    background-image: url(../../img/fundoPesquisa.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pesquisa .titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0%;
+    width: 100%;
+    height: 50%;
+}
+
+.pesquisa .titulo h1 img {
+    margin: 10% auto;
+    height: 28vh;
+    margin: 4vh 0vh 4vh 0vh;
+}
+
+.pesquisa .titulo h1 {
+    margin: 0%;
+}
+
+.pesquisa .textoConheca {
+    width: 73%;
+    justify-content: center;
+
+}
+
+.pesquisa .textoConheca p {
+    line-height: 8vh;
+    font-size: 4vh;
+    text-align: justify;
+    margin: 0%;
+}
+.pesquisa .textoConheca button{
+    width: 20vw;
+    height: 7vh;
+    background-color:#ffffff;
+    border:solid 2px #F9A7B0;
+    border-radius: 50vw;
+    text-align: center;
+    margin: 5% 40%;
+}
+/*Final da pesquisa*/
+/*Inicio do contato*/
+.contato {
+    height: 100vh;
+    width: 100%;
+    color: rgb(60, 60, 60);
+    background-image: url(../../img/fundoContato.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    margin: auto;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.contato .titulo {
+    display: flex;
+    align-items: flex-end;
+    width: auto;
+    height: auto;
+    margin: 0% 15% 15vh 2%;
+}
+.contato .titulo img{
+    width: 90%;
+    height: 45vh;
+}
+
+
+.contato .formContato {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 55vw;
+    height: 100vh;
+    margin-right: 5%;
+    background-color: #ffe6cf;
+}
+.contato .formContato input{
+   width: 35vw;
+   height: 5vh;
+   border-radius: 32vw;
+   border:solid 2px #454645;
+}
+.contato .formContato button{
+    width: 20vw;
+    height: 7vh;
+    background-color:#ffffff;
+    border:solid 2px #f7c9a0;
+    border-radius: 50vw;
+    text-align: center;
+    margin: 8% 20% 0% 20%;
+}
+.contato .formContato h2{
+    font-size: 6.5vh;
+    margin: 0%;
+    color: #000000;
+    font-family: 'Montserrat';
+    border-bottom: solid 0.4vh #000000;
+    margin: 10% 0% 2% 0%;
+}
+.contato .formContato p{
+    margin: 5% 0% 1% 0%;
+    font-size: 3vh;
+    color: #000000;
+
+}
+#nome{
+    margin: 2% 0% 1% 0%;
+}
+.detalheNuvem{
+    display: flex;
+    justify-content: flex-start;
+    margin: 0% 90% 0% 0%;
+}
+
+/*Final do contato*/
