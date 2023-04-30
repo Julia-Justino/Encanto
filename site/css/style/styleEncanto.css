@@ -554,6 +554,7 @@ hr {
     height: 100vh;
     margin-right: 5%;
     background-color: #ffe6cf;
+    border-radius: 0vw 4vw;
 }
 .contato .formContato input{
    width: 35vw;
