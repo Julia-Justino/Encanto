@@ -401,14 +401,14 @@ hr {
     flex-direction: column;
     align-items: center;
     margin: 0%;
-    width: 100%;
+    width: 98vw;
     height: 50%;
 }
 
 .destaque .titulo h1 img {
     width: auto;
     height: 28vh;
-    margin: 4vh 0vh 4vh 0vh;
+    margin: 4vh 0vh 0vh 0vh;
 }
 
 .destaque .titulo h1 {
@@ -417,22 +417,28 @@ hr {
 
 .destaque .textoConheca {
     width: 85%;
-    height: 65vh;
+    height: 55vh;
     justify-content: center;
     margin-left: 10%;
     flex-direction: row;
     display: flex;
 }
+.p_card{
+    font-size: 4vh;
+    text-align: center;
+    margin: auto;
+}
 
 .destaque .textoConheca .card {
-    width: 30vw;
+    width: 25vw;
     height: 18vw;
     flex-direction: row;
     display: flex;
-    margin: 5% 5% 0% 0%;
+    margin: 8% 5% 0% 0%;
     padding: 1% 0% 2% 0%;
     background-color: #C6F4AD;
     align-items: flex-start;
+    border-radius: 100%;
 }
 .conteudoCard{
     display: flex;
@@ -478,7 +484,7 @@ hr {
     border:solid 2px #616161;
     border-radius: 50vw;
     margin-top: 3%;
-    color: #6d6d6d;
+    color: #000000;
     transition: 2s;
 }
 
@@ -641,5 +647,4 @@ hr {
     justify-content: flex-start;
     margin: 0% 90% 0% 0%;
 }
-
 /*Final do contato*/
