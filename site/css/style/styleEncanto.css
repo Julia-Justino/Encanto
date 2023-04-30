@@ -33,7 +33,8 @@ li {
     margin-left: 4vh;
     width: auto;
 }
-.navbar ul{
+
+.navbar ul {
     margin: 2% 0% 1% 0%;
 }
 
@@ -109,7 +110,7 @@ hr {
 /*Final do Banner*/
 
 /*Inicio do blog*/
-.paragrafoEspaco{
+.paragrafoEspaco {
     margin-left: 10%;
 }
 
@@ -137,7 +138,8 @@ hr {
     margin-top: 25%;
     align-items: center;
 }
-.blog .container h1{
+
+.blog .container h1 {
     margin: 0%;
 }
 
@@ -150,7 +152,7 @@ hr {
     height: 100vw;
 }
 
-.subTituloBlog h2{
+.subTituloBlog h2 {
     margin: 0%;
     text-align: center;
     border-bottom: solid 2px #000000;
@@ -179,7 +181,7 @@ hr {
 
 /*Final do blog*/
 /*Inicio Criação do blog*/
-.criacaoBlog{
+.criacaoBlog {
     height: 105vh;
     width: 100%;
     color: rgb(60, 60, 60);
@@ -190,46 +192,52 @@ hr {
     margin: auto;
     flex-direction: column;
 }
-.criacaoBlog .container{
+
+.criacaoBlog .container {
     display: flex;
     margin: auto;
     flex-direction: column;
-    align-items:center;
+    align-items: center;
     margin: 0%;
     width: 80%;
     height: 85%;
 }
-.criacaoBlog .container hr{
+
+.criacaoBlog .container hr {
     margin: 3% 0%;
     width: 55%;
     height: 0.6%;
     text-align: center;
     background-color: #B19CD9;
 }
-.subtitulo_criacaoBlog{
+
+.subtitulo_criacaoBlog {
     display: flex;
     flex-direction: column;
-    align-items:flex-start;
-    margin:4% 68% 0% 0%;
+    align-items: flex-start;
+    margin: 4% 68% 0% 0%;
     height: 15%;
 }
-.subtitulo_criacaoBlog h2{
+
+.subtitulo_criacaoBlog h2 {
     border-bottom: solid 2px #000000;
     width: 28vw;
     font-size: 8vh;
     margin: 0%;
     padding: 0% 0% 0% 10%;
 }
-.texto_criacaoBlog{
+
+.texto_criacaoBlog {
     width: 90%;
     text-align: justify;
     font-size: 4.26vh;
     justify-content: center;
     line-height: 8vh;
 }
+
 /*Final Criação do blog*/
 /*Inicio do conheça-me*/
-.conhecaMe{
+.conhecaMe {
     height: 100vh;
     width: 100%;
     color: rgb(60, 60, 60);
@@ -242,77 +250,88 @@ hr {
     flex-direction: column;
     align-items: center;
 }
-.conhecaMe .titulo{
+
+.conhecaMe .titulo {
     display: flex;
     flex-direction: column;
-    align-items:center;
+    align-items: center;
     margin: 0%;
     width: 100%;
-    height: 50%; 
+    height: 50%;
 }
 
-.conhecaMe .titulo h1 img{
+.conhecaMe .titulo h1 img {
     width: auto;
     height: 28vh;
     margin: 4vh 0vh 4vh 0vh;
 }
-.conhecaMe .titulo h1{
+
+.conhecaMe .titulo h1 {
     margin: 0%;
 }
-.conhecaMe .textoConheca{ 
+
+.conhecaMe .textoConheca {
     width: 80%;
     justify-content: center;
     margin-left: 10%;
 }
-.conhecaMe .textoConheca p{
+
+.conhecaMe .textoConheca p {
     line-height: 10vh;
     font-size: 4.26vh;
     text-align: justify;
     margin: 0%;
 }
-.marcaConheca{
+
+.marcaConheca {
     width: auto;
     background-color: #ADD8E6;
     border-radius: 50vw;
 }
+
 /*Final do conheça-me*/
 /*Inicio do conheça - me arte */
 .conhecaMe_arte {
-        align-items: center;
-        display: flex;
-        height: 100vh;
-        width: 100%;
-        color: rgb(60, 60, 60);
-        flex-direction: column;
-        background-image: url(../../img/fundoConheca01.png);
-        background-size: cover;
-        background-repeat: no-repeat;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    color: rgb(60, 60, 60);
+    flex-direction: column;
+    background-image: url(../../img/fundoConheca01.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-.conhecaMe_arte .titulo{
+
+.conhecaMe_arte .titulo {
     margin: 5% 0% 3% 18.2%;
     text-align: left;
     border-bottom: solid 2px #000000;
     width: 50vw;
     font-size: 4vh;
 }
-.conhecaMe_arte .central .titulo h2{
+
+.conhecaMe_arte .central .titulo h2 {
     margin: 14% 0% 0% 4%;
     font-size: 8vh;
 }
+
 .conhecaMe_arte .central .textoArte {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    align-items:flex-end;
+    align-items: flex-end;
     width: 100%;
 }
-.conhecaMe_arte .central .textoArte p{
+
+.conhecaMe_arte .central .textoArte p {
     width: 68%;
     font-size: 5.2vh;
     line-height: 10vh;
     text-align: justify;
     margin: 2% 2.5%;
 }
+
 /*Final do conheça - me arte*/
 /*Inicio do conheça - me arte 02*/
 .conhecaMe_arte02 {
@@ -326,29 +345,120 @@ hr {
     background-size: cover;
     background-repeat: no-repeat;
 }
-.conhecaMe_arte02 .titulo{
-margin: 8% 0% 3% 48.4%;
-text-align: left;
-border-bottom: solid 2px #000000;
-width: 30%;
-font-size: 4vh;
+
+.conhecaMe_arte02 .titulo {
+    margin: 8% 0% 3% 48.4%;
+    text-align: left;
+    border-bottom: solid 2px #000000;
+    width: 30%;
+    font-size: 4vh;
 }
-.conhecaMe_arte02 .central .titulo h2{
-margin: 14% 0% 0% 8%;
-font-size: 8vh;
+
+.conhecaMe_arte02 .central .titulo h2 {
+    margin: 14% 0% 0% 8%;
+    font-size: 8vh;
 }
+
 .conhecaMe_arte02 .central .textoArte {
-display: flex;
-flex-direction: column;
-justify-content: flex-start;
-align-items:flex-start;
-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
 }
-.conhecaMe_arte02 .central .textoArte p{
-width: 68%;
-font-size: 6.2vh;
-line-height: 10vh;
-text-align: justify;
-margin: 2% 2.5%;
+
+.conhecaMe_arte02 .central .textoArte p {
+    width: 68%;
+    font-size: 6.2vh;
+    line-height: 10vh;
+    text-align: justify;
+    margin: 2% 2.5%;
 }
+
 /*Final do conheça - me arte 02*/
+/*Inicio do destaque*/
+.destaque {
+    height: 100vh;
+    width: 100%;
+    color: rgb(60, 60, 60);
+    background-image: url(../../img/destaqueFundo.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    margin: auto;
+
+    align-items: center;
+}
+
+.destaque .titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0%;
+    width: 100%;
+    height: 50%;
+}
+
+.destaque .titulo h1 img {
+    width: auto;
+    height: 28vh;
+    margin: 4vh 0vh 4vh 0vh;
+}
+
+.destaque .titulo h1 {
+    margin: 0%;
+}
+
+.destaque .textoConheca {
+    width: 85%;
+    height: 65vh;
+    justify-content: center;
+    margin-left: 10%;
+    flex-direction: row;
+    display: flex;
+}
+
+.destaque .textoConheca .card {
+    width: 30vw;
+    height: 18vw;
+    flex-direction: row;
+    display: flex;
+    margin: 5% 5% 0% 0%;
+    padding: 1% 0% 2% 0%;
+    background-color: #C6F4AD;
+    align-items: flex-start;
+}
+.conteudoCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0% auto;
+}
+.destaque .textoConheca .card img{
+    border-radius: 100%;
+    width: 25%;
+    height: 20%;
+    margin:  auto;
+    border: solid 1px #000000;
+}
+.destaque .textoConheca .card p{
+    text-align: justify;
+    margin: 1% 8%;
+    font-size: 3vh;
+}
+.destaque .textoConheca .card button{
+    width: 10vw;
+    height: 5vh;
+    background-color:#ffffff;
+    border:solid 2px #72f103b6;
+    border-radius: 50vw;
+    margin-top: 3%;
+}
+
+ #cardMeio {
+    background-color: #B2DF8A;  
+    margin: 0% 5% 0% 0%;
+}
+
+/*Final do destaque*/
