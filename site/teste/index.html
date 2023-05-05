@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* body{
+            display: flex;
+            flex-direction: row;
+            width: 1190vw;
+            scroll-behavior:smooth;
+        }
+        div{
+          
+            background-color: black;
+            color: white;
+            margin: 10vh 0%;
+        }
+        div.um{
+            background-color: brown;
+            margin: 0% 2% 0% 0%;
+            height: 100vh;
+            width: 95vw;
+            transition: 2s;
+        } */
+        .scroller > div {
+  flex: 0 0 210vh;
+  width: 98vw;
+  height: auto;
+  background-color: #e7cfff;
+  color: #fff;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  scroll-snap-align: end;
+}
+
+.scroller > div:nth-child(2n) {
+  background-color: #fff;
+  color: #663399;
+}
+body{
+    margin: 0%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+html{
+    scroll-behavior:unset;
+}
+
+        .scroller {
+  text-align: left;
+  margin: 0%;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: scroll;
+  display: flex;
+  box-sizing: border-box;
+  border: 1px solid #000;
+  scroll-snap-type: x mandatory;
+
+}
+
+    </style>
+</head>
+<body>
+    <div class="scroller">
+        <div>1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae deleniti illo sapiente, quisquam sunt sed? Sapiente optio provident quam tempora ipsum exercitationem. Cumque rerum officiis, quae fugit assumenda omnis perspiciatis?
+            <br>
+            <button><a href="#oito">teste</a></button>
+        </div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div id="oito">8</div>
+      </div>
+      <br>
+   <!--  <div class="um">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, itaque dolor ipsa quas, velit quis, esse omnis sint perspiciatis delectus inventore voluptatum. Earum tempora eos recusandae voluptatibus sapiente? Deserunt, consequuntur.
+        <button><a href="#luz">Teste</a></button>
+    </div>
+    <div class="dois" id="luz">Lorem, ipsum dolor sit amet consectetur adipisicing elit. A ratione nemo officiis, harum assumenda quisquam dolor quos maxime quas minus? Cum reiciendis neque modi magni perferendis nulla minima repellat fugit?0222222</div> -->
+</body>
+</html>
