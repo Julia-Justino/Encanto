@@ -37,6 +37,7 @@ li {
     font-size: 4vh;
     margin-left: 4vh;
     width: auto;
+    transition: 1.5s;
 }
 
 .navbar ul {
@@ -439,6 +440,10 @@ hr {
     background-color: #C6F4AD;
     align-items: flex-start;
     border-radius: 100%;
+    transition: 1.5s;
+}
+.destaque .textoConheca .card a{
+    color: #272727;
 }
 .conteudoCard{
     display: flex;
@@ -476,6 +481,7 @@ hr {
     border:solid 2px #72f103b6;
     border-radius: 50vw;
     margin-top: 3%;
+    transition: 1.5s;
 }
 .destaque .textoConheca .card button:hover{
     width: 15vw;
@@ -485,7 +491,7 @@ hr {
     border-radius: 50vw;
     margin-top: 3%;
     color: #000000;
-    transition: 2s;
+    transition: 1s;
 }
 
  #cardMeio {
@@ -547,6 +553,7 @@ hr {
     border-radius: 50vw;
     text-align: center;
     margin: 5% 40%;
+    transition: 1.5s;
 }
 .pesquisa .textoConheca button:hover{
     background-color:#F9A7B0;
@@ -612,6 +619,7 @@ hr {
     border-radius: 50vw;
     text-align: center;
     margin: 8% 20% 0% 20%;
+    transition: 1.5s;
 }
 .contato .formContato button:hover{
     width: 35vw;
@@ -645,6 +653,6 @@ hr {
     display: flex;
     height: 25vh;
     justify-content: flex-start;
-    margin: 0% 90% 0% 0%;
+    margin: 0% 80% 0% 0%;
 }
 /*Final do contato*/
