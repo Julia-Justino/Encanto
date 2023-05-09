@@ -610,6 +610,11 @@ hr {
    height: 5.8vh;
    border-radius: 32vw;
    border:solid 2px #f5e0e0;
+   text-align: center;
+}
+#inp_assunto{
+    height: 20vh;
+    border-radius: 0.5vw
 }
 .contato .formContato button{
     width: 20vw;
@@ -649,10 +654,5 @@ hr {
 #nome{
     margin: 2% 0% 1% 0%;
 }
-.detalheNuvem{
-    display: flex;
-    height: 25vh;
-    justify-content: flex-start;
-    margin: 0% 80% 0% 0%;
-}
+
 /*Final do contato*/
