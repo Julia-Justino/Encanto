@@ -1,0 +1,180 @@
+* {
+    scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.scroller>div {
+    flex: 0 0 200vh;
+    width: 80vw;
+    height: auto;
+    background-color: #cfffd9d3;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    scroll-snap-align: end;
+}
+
+.scroller>div:nth-child(2n) {
+    background-image: url(../../../img/post/irmaoUrso/fundinho.png);
+    color: #000000;
+}
+
+body {
+    margin: 0%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+html {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+
+.scroller {
+    text-align: left;
+    margin: 0%;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.tomates {
+    height: 8vh;
+    width: 25vw;
+    border-radius: 5vw;
+}
+
+/*Final de confi das abas*/
+button {
+    margin: 3vw;
+    border-radius: 100%;
+    font-size: 3vh;
+    background-color: #fff;
+    border: 0.1vh solid #000;
+    height: 2vw;
+    width: 6vw;
+}
+
+.navbar {
+    display: flex;
+    background-color: #a4fb96;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-around;
+    box-shadow: 1vh 0.1vh 3vh #000;
+    margin: 0% 0% 0% -17%;
+    border-radius: 0% 5% 5% 0%;
+    transition: 1.8s
+}
+
+.navbar:hover {
+    transition: 1.8s;
+    margin: 0%;
+    background-color: #94ff83;
+}
+
+.navbar img {
+    width: 18vw;
+    height: 15vh;
+    margin: 5vh 2vw;
+}
+
+.navbar #pata {
+    width: 10vw;
+    margin: 0 auto 10vh auto;
+}
+
+ul {
+    justify-content: space-around;
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    margin-left: 1vw;
+    padding: 0%;
+}
+
+li {
+    font-size: 4vh;
+    margin-left: 4vh;
+    width: auto;
+    transition: 1.5s;
+    list-style: none;
+}
+
+.navbar ul {
+    margin: 2% 0% 20% 16%;
+}
+
+.navbar li a:hover {
+    font-size: 4.5vh;
+
+    transition: 1.5s;
+    border-bottom: 0.2vh solid #000;
+    transition: 1.5s;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    transition: 1.8s;
+}
+
+/*Inicio do post - irmão urso*/
+/*Inicio Capa do post*/
+.imgCapaIrmaoUrso {
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+/*Final Capa do post*/
+/*Inicio do sobre filme*/
+.sobre {
+    display: flex;
+    flex-direction: column;
+}
+
+.imgSobre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre .texto p {
+    font-size: 3.5vh;
+    line-height: 10vh;
+    text-align: justify;
+}
+.sobre .texto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.sobre .texto button{
+    margin: 0%;
+    border: 0.4vh solid #052900;
+    transition: 1.5s;
+}
+.sobre .texto button:hover{
+    background-color: #366b01;
+    font-size: 3vh;
+    transition: 2s;
+    color: #fff;
+    width: 35vw;
+    border: 0.4vh solid #ffffff;
+    box-shadow: 1vh 2vh 5vh #000;
+}
+
+.imgSobre img {
+    width: 40%;
+}
+
+/*Final do sobre filme*/
+/*Final do post - irmão urso*/
