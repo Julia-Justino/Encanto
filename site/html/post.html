@@ -35,11 +35,11 @@
         <section id="post">
             <!--Inicio filmes-->
             <div class="destaque" id="destaque">
-                <div id="central" >
+                <div id="central">
                     <div class="titulo" id="filmes">
                         <h1><img src="../img/post/filme.png" alt=""></h1>
                         <div class="textoConheca">
-                            <div class="card"  id="card1">
+                            <div class="card" id="card1">
                                 <div class="conteudoCard">
                                     <img src="../img/post/irmaoUrso/fundo.png" alt="">
                                     <h1>Irmão urso</h1>
@@ -52,10 +52,11 @@
 
                             <div class="card">
                                 <div class="conteudoCard" id="card2">
-                                    <img src="../img/post/soul/capaSoul.jpg"
-                                        alt="">
+                                    <img src="../img/post/soul/capaSoul.jpg" alt="">
                                     <h1>Soul</h1>
-                                    <p>Um professor de música que sonha em tocar jazz. Após sofrer um acidente, sua alma é transportada para o mundo das almas, ele tenta encontrar o caminho de volta para a Terra.</p>
+                                    <p>Um professor de música que sonha em tocar jazz. Após sofrer um acidente, sua alma
+                                        é transportada para o mundo das almas, ele tenta encontrar o caminho de volta
+                                        para a Terra.</p>
                                     <button>Saiba mais</button>
                                 </div>
                             </div>
@@ -66,7 +67,7 @@
             </div>
             <!--Final filmes-->
             <!--Inicio livros-->
-            <hr class="post" >
+            <hr class="post">
             <div class="destaque" id="destaque">
                 <div id="central">
                     <div class="titulo" id="livros">
@@ -76,17 +77,19 @@
                                 <div class="conteudoCard">
                                     <img src="../img/post/pequenoPrincipe/pequenoCapa.jpg" alt="">
                                     <h1>Pequeno príncipe</h1>
-                                    <p>É uma história sobre um aviador que sofre um acidente e acaba caindo no deserto do Saara, onde conhece um jovem príncipe de um pequeno planeta.</p>
+                                    <p>É uma história sobre um aviador que sofre um acidente e acaba caindo no deserto
+                                        do Saara, onde conhece um jovem príncipe de um pequeno planeta.</p>
                                     <button>Saiba mais</button>
                                 </div>
                             </div>
 
                             <div class="card" id="card4">
                                 <div class="conteudoCard">
-                                    <img src="../img/post/coraline/capaCoraline.jpg"
-                                        alt="">
+                                    <img src="../img/post/coraline/capaCoraline.jpg" alt="">
                                     <h1>Coraline</h1>
-                                    <p>A história acompanha Coraline, uma menina que se muda com seus pais para uma nova casa. Lá, ela descobre uma porta secreta que leva a uma versão alternativa e sinistra da sua vida. </p>
+                                    <p>A história acompanha Coraline, uma menina que se muda com seus pais para uma nova
+                                        casa. Lá, ela descobre uma porta secreta que leva a uma versão alternativa e
+                                        sinistra da sua vida. </p>
                                     <button>Saiba mais</button>
                                 </div>
                             </div>
@@ -99,25 +102,27 @@
             <!--Inicio música-->
             <hr class="post">
             <div class="destaque" id="destaque">
-                <div id="central" >
-                <div class="titulo" id="musicas">
+                <div id="central">
+                    <div class="titulo" id="musicas">
                         <h1><img src="../img/post/musica.png" alt=""></h1>
                         <div class="textoConheca">
                             <div class="card" id="card5">
                                 <div class="conteudoCard">
                                     <img src="../img/post/musica/porSol.jpeg" alt="">
                                     <h1>Pôr do sol</h1>
-                                    <p>A letra sugere que o pôr do sol pode ser um momento de renovação, um momento para deixar as preocupações de lado e aproveitar a vida. A música transmite uma sensação de paz e amor</p>
+                                    <p>A letra sugere que o pôr do sol pode ser um momento de renovação, um momento para
+                                        deixar as preocupações de lado e aproveitar a vida. A música transmite uma
+                                        sensação de paz e amor</p>
                                     <button>Saiba mais</button>
                                 </div>
                             </div>
 
                             <div class="card" id="card6">
                                 <div class="conteudoCard">
-                                    <img src="../img/post/musica/queen.jpg"
-                                        alt="">
+                                    <img src="../img/post/musica/queen.jpg" alt="">
                                     <h1>Don't Stop Me Now</h1>
-                                    <p> A canção é uma celebração da vida e da alegria, com uma letra que fala sobre aproveitar ao máximo cada momento e superar obstáculos. </p>
+                                    <p> A canção é uma celebração da vida e da alegria, com uma letra que fala sobre
+                                        aproveitar ao máximo cada momento e superar obstáculos. </p>
                                     <button>Saiba mais</button>
                                 </div>
                             </div>
@@ -151,18 +156,13 @@
                 <h1><img src="../img/pesquisa.png" alt=""></h1>
             </div>
             <div class="cont">
-                <div class="dadinho" onclick="alerta()"></div>
-                    <div class="resultado" id="dadoResultado"></div> 
-                
+                <div class="dadinho" onclick="gerarNum()"></div>
+                <div class="resultado" id="dadoResultado"></div>
+
             </div>
         </div>
         <!--Final dados mágicos-->
 </body>
 
 </html>
-<script>
-    function alerta() {
-        dadoResultado.innerHTML = `Clicou no dado`
-        alert("Clicou no dado");
-    }
-</script>
+<script src="../js/indique.js"></script>

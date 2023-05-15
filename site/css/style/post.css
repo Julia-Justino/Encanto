@@ -7,6 +7,13 @@ html {
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
+h5{
+    margin: 0%;
+}
+span.vetorIndique{
+    font-size: 4vh;
+    margin: 1%;
+}
 
 body {
     margin: 0%;
@@ -308,7 +315,7 @@ p{
 /*Final da pesquisa*/
 /*Inicio dados mágicos*/
 .dados{
-    height: 105vh;
+    height: 115vh;
     width: 100%;
     color: rgb(60, 60, 60);
     background-image: url(../../img/destaqueFundo.png);
@@ -325,8 +332,8 @@ p{
     background-image: url(../../img/post/dados.png);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 52vh;
-    width: 29vw;
+    height: 65vh;
+    width: 35vw;
     margin: auto;
 }
 .dados .cont{
