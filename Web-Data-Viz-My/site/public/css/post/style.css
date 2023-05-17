@@ -54,8 +54,8 @@ button {
     font-size: 3vh;
     background-color: #fff;
     border: 0.1vh solid #000;
-    height: 2vw;
-    width: 6vw;
+    height: auto;
+    width: auto;
 }
 
 .navbar {
