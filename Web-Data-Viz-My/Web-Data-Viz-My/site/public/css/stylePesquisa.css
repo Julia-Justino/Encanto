@@ -6,6 +6,7 @@
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body {
@@ -128,7 +129,7 @@ hr {
 
 .blog .container {
     align-items: center;
-    height: 105vh;
+    height: 110vh;
     width: 100%;
     color: rgb(60, 60, 60);
     flex-direction: column;
@@ -136,6 +137,7 @@ hr {
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
+    margin: 0%;
 }
 
 .blog .container h1 img {
@@ -152,7 +154,7 @@ hr {
     align-items: flex-start;
     margin-left: 10%;
     width: 95%;
-    height: 100vw;
+    height: auto;
 }
 
 .blog .texto p {
@@ -172,15 +174,110 @@ hr {
 .formPesquisa{
     align-items: center;
     height: 105vh;
-    width: 7%;
+    width: 70%;
     background-color: #F9C0D2;
     border: 0.5vh solid black;
+    border-radius: 0% 10vh 10vh 0%;
 }
 .formPesquisa .burguer{
-    width: 90%;
-    height: 15%;
+    width: 100%;
+    height: 13%;
+    background-color: Transparent;
+    border: none;
     background-image: url(../assets/img/pesquisa/bur.png);
     background-size: cover;
     margin: auto;
 }
+.formPesquisa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formPesquisa .form h2{
+    color: rgb(0, 0, 0);
+    border-bottom: 0.4vh solid #000;
+    font-size: 9vh;
+    margin: 8% auto;
+    
+}
+.formPesquisa .form p{
+    font-size: 6vh;
+    color: rgb(0, 0, 0);
+    margin: 5% 0% 0% 0%;
+    width: 36vw;
+    
+}
+.formPesquisa .form input{
+    width: 95%;
+    height: 8%;
+    border-radius: 15vh;
+    border-color: #ff8fb2;
+}
+.formPesquisa .form button{
+    font-family: 'Comfortaa', cursive;
+    width: 95%;
+    height: 13%;
+    margin-top: 9%;
+    border-radius: 15vh;
+    background-color: white;
+    border-color: #f96292;
+    transition: 1.5s;
+}
+.formPesquisa .form button:hover{
+    background-color: #f274a0;
+    border-color: #ffffff;
+    margin-top: 4%;
+    color: white;
+    transition: 1s;
+    box-shadow: 1vh 1vh 5vw 1vh #000;
+}
 /*Final do form pesquisa*/
+/*Inicio da pesquisa*/
+.pesquisa {
+    height: 100vh;
+    width: 100%;
+    color: rgb(60, 60, 60);
+    background-image: url(../assets/img/fundoPesquisa.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pesquisa .titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0%;
+    width: 100%;
+    height: 50%;
+}
+
+.pesquisa .titulo h1 img {
+    margin: 10% auto;
+    height: 28vh;
+    margin: 4vh 0vh 4vh 0vh;
+}
+
+.pesquisa .titulo h1 {
+    margin: 0%;
+}
+
+.pesquisa .textoConheca {
+    width: 73%;
+    justify-content: center;
+
+}
+
+.pesquisa .textoConheca p {
+    line-height: 8vh;
+    font-size: 4vh;
+    text-align: justify;
+    margin: 0%;
+}
+
+/*Final da pesquisa*/
