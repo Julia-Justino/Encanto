@@ -1,0 +1,57 @@
+.scroller>div {
+    flex: 0 0 200vh;
+    width: 80vw;
+    height: auto;
+    background-color: #ff0000;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    scroll-snap-align: end;
+}
+.scroller>div:nth-child(2n) {
+    background-image: url(../../assets/img/post/pequenoPrincipe/fundinho.png);
+    color: #000000;
+}
+.navbar {
+    display: flex;
+    background-color: #ffbbbb73;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-around;
+    box-shadow: 1vh 0.1vh 3vh #000;
+    margin: 0% 0% 0% -17%;
+    border-radius: 0% 5% 5% 0%;
+    transition: 1.8s
+}
+.navbar:hover {
+    transition: 1.8s;
+    margin: 0%;
+    background-color: #ff005d;
+}
+.textoIrmaoUrso img {
+    background-size: cover;
+    width: 70vw;
+    height: 100vh;
+    margin-top: 7vh;
+    flex-direction: row;
+    display: flex;
+    border: 10px solid #000000;
+}
+.sobre .texto button{
+    margin: 0%;
+    border: 0.4vh solid #010f56;
+    transition: 1.5s;
+}
+.sobre .texto button:hover{
+    background-color: #001e5f;
+    font-size: 3vh;
+    transition: 2s;
+    color: #fff;
+    width: 35vw;
+    border: 0.4vh solid #ffffff;
+    box-shadow: 1vh 2vh 5vh #000;
+}
+.texto{
+    margin-left: 7.5vw;
+}
