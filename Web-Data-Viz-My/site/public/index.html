@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="https://images.emojiterra.com/google/android-11/512px/1f308.png" />
     <link rel="stylesheet" href="./css/styleEncanto.css">
+    <script src="./js/funcoes.js"></script>
     <title>Encanto</title>
 </head>
 
@@ -202,7 +203,11 @@
             <div class="titulo">
                 <h1><img src="./assets/img/contato.png" alt=""></h1>
             </div>
-            <div class="formContato">
+            <div class="formContato" id="geral">
+                <div class="alerta_erro">
+                    <div class="card_erro" id="cardErro">
+                        <span id="mensagem_erro"></span>
+                    </div>
                     <h2>Formulário de contato</h2>
                     <div class="form">
                     <p id="nome">Seu nome:</p>
@@ -212,7 +217,11 @@
                     <p>Assunto</p>
                     <input type="text" id="inp_assunto" class="inpContato" placeholder="EX. Tenho interesse em entrar em contato">
                     <br>
-                    <button>Enviar</button>
+                    <button onclick="cadastrar()">Enviar</button>
+                    <div id="div_aguardar" class="loading-div">
+                       
+                    </div>
+                    <div id="div_erros_login"></div>
                 </div>
                 <img src="../img/detalheNuvem.png" alt="" class="detalheNuvem">
             </div>
@@ -220,4 +229,4 @@
     <!--Final do contato-->
 </body>
 </html>
-<script src="./js/contato.js"></script>
+<script src="./js/contatols.js"></script>

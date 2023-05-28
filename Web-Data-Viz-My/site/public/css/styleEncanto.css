@@ -656,3 +656,30 @@ hr {
     margin: 0% 80% 0% 0%;
 }
 /*Final do contato*/
+#resul{
+    margin: auto;
+    text-align: center;
+    font-size: 8vh;
+}
+#resul p{
+    font-size: 4vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card_erro {
+    display: none;
+    background-color: #fff;
+    color: black;
+    width: 230px;
+    position: fixed;
+    border-radius: 4px;
+    border: #e6005a 3px solid;
+    padding: 10px;
+    margin-right: 10%;
+  }
+  
+  .card_erro #mensagem_erro{
+    font-weight: 500;
+    font-size: 20px;
+  }
+  
