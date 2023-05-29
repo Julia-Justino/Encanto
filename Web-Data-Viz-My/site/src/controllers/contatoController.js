@@ -21,7 +21,7 @@ function cadastrar(req, res) {
     // Crie uma variável que vá recuperar os valores do arquivo index.html
     var nome = req.body.nomeServer;
     var email = req.body.emailServer;
-
+    console.log(req.body.emailServer);
     // Faça as validações dos valores
     if (nome == undefined) {
         res.status(400).send("Seu nome está undefined!");
@@ -40,7 +40,25 @@ function cadastrar(req, res) {
     })
 }
 
+function recuperarIdUsuario(req, res) {
+    var nome = req.body.nomeServer;
+    
+    if (nome == undefined) {
+        res.status(400).send("Seu nome está undefined!");
+    }
+    contatoModel.recuperarIdUsuario(nome)
+    .then(
+        function (resposta){
+        res.status(200)
+        .send("Consegui pegar o valor do usuario");
+        console.log(resposta)
+    }).catch(function(erro){
+        res.status(500).json(erro.sqlMessage);
+    })
+}
+
 module.exports = {
     listar,
-    cadastrar
+    cadastrar,
+    recuperarIdUsuario
 }
