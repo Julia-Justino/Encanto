@@ -38,39 +38,36 @@ function cadastrar() {
 
     //Recupere o valor da nova input pelo nome do id
     // Agora vá para o método fetch logo abaixo
+
     var nomeVar = inp_nome.value;
     var emailVar = inp_email.value;
     var assuntoVar = inp_assunto.value;
 
-    
-
+    /* var nomeVar = document.getElementById('inp_nome').value;
+    var emailVar = document.getElementById('inp_email').value;
+    var assuntoVar = document.getElementById('inp_assunto').value;
+ */
 
     if (nomeVar == "") {
         alert("(Digite seu nome!)");
         inp_nome.value = "";
-
         cardErro.style.display = "block"
         mensagem_erro.innerHTML = "(Mensagem de erro para todos os campos em branco)";
-
-
         return false;
+
     } else if (emailVar == "") {
         alert("(Digite seu email!)");
         inp_email.value = "";
-
-
         return false;
     }
     else if (emailVar.indexOf('@') == -1) {
         alert("(Digite um email válido!)");
         inp_email.value = "";
-
         return false;
     }
     else if (assuntoVar == "") {
         alert("(Digite o assunto!)");
         inp_assunto.value = "";
-
         return false;
     }
     console.log("Final das validações")

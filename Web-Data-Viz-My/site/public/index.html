@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -170,8 +169,7 @@
                     </div>
                     <div class="card">
                         <div class="conteudoCard">
-                            <img src="https://images.pexels.com/photos/436413/pexels-photo-436413.jpeg"
-                                alt="">
+                            <img src="https://images.pexels.com/photos/436413/pexels-photo-436413.jpeg" alt="">
                             <h1>Sobre filmes</h1>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quae dolorum
                                 consectetur similique!</p>
@@ -190,8 +188,11 @@
             <div class="titulo">
                 <h1><img src="./assets/img/pesquisa.png" alt=""></h1>
                 <div class="textoConheca">
-                   <p>A pesquisa é uma ferramenta valiosa para entender a audiência e ajustar o conteúdo de um blog para melhor atendê-la. Ao estudar o público atual de um blog, é possível descobrir quais são os interesses, necessidades e expectativas dos leitores, o que permite desenvolver um conteúdo mais relevante e atrativo.</p>
-                   <button>Faça parte</button>
+                    <p>A pesquisa é uma ferramenta valiosa para entender a audiência e ajustar o conteúdo de um blog
+                        para melhor atendê-la. Ao estudar o público atual de um blog, é possível descobrir quais são os
+                        interesses, necessidades e expectativas dos leitores, o que permite desenvolver um conteúdo mais
+                        relevante e atrativo.</p>
+                    <a href="./pesquisa.html"> <button>Faça parte</button></a>
                     </p>
                 </div>
             </div>
@@ -200,33 +201,134 @@
     <!--Final da pesquisa-->
     <!--Inicio do contato-->
     <div class="contato" id="contato">
-            <div class="titulo">
-                <h1><img src="./assets/img/contato.png" alt=""></h1>
-            </div>
-            <div class="formContato" id="geral">
-                <div class="alerta_erro">
-                    <div class="card_erro" id="cardErro">
-                        <span id="mensagem_erro"></span>
-                    </div>
-                    <h2>Formulário de contato</h2>
-                    <div class="form">
+        <div class="titulo">
+            <h1><img src="./assets/img/contato.png" alt=""></h1>
+        </div>
+        <div class="formContato" id="geral">
+            <div class="alerta_erro">
+                <div class="card_erro" id="cardErro">
+                    <span id="mensagem_erro"></span>
+                </div>
+                <h2>Formulário de contato</h2>
+                <div class="form">
                     <p id="nome">Seu nome:</p>
                     <input type="text" id="inp_nome" class="inpContato" placeholder="Ex: Julia Justino">
                     <p>Email:</p>
                     <input type="text" id="inp_email" class="inpContato" placeholder="EX. seeuemail@email.com">
                     <p>Assunto</p>
-                    <input type="text" id="inp_assunto" class="inpContato" placeholder="EX. Tenho interesse em entrar em contato">
+                    <input type="text" id="inp_assunto" class="inpContato"
+                        placeholder="EX. Tenho interesse em entrar em contato">
                     <br>
                     <button onclick="cadastrar()">Enviar</button>
                     <div id="div_aguardar" class="loading-div">
-                       
+
                     </div>
                     <div id="div_erros_login"></div>
                 </div>
                 <img src="../img/detalheNuvem.png" alt="" class="detalheNuvem">
             </div>
-    </div>
-    <!--Final do contato-->
+        </div>
+        <!--Final do contato-->
 </body>
+
 </html>
-<script src="./js/contatols.js"></script>
+<script>
+    var usuCont = 0;
+    function cadastrar() {
+        aguardar();
+
+        //Recupere o valor da nova input pelo nome do id
+        // Agora vá para o método fetch logo abaixo
+
+        var nomeVar = inp_nome.value;
+        var emailVar = inp_email.value;
+        var assuntoVar = inp_assunto.value;
+        alert(emailVar)
+        /* var nomeVar = document.getElementById('inp_nome').value;
+        var emailVar = document.getElementById('inp_email').value;
+        var assuntoVar = document.getElementById('inp_assunto').value;
+     */
+
+        if (nomeVar == "") {
+            alert("(Digite seu nome!)");
+            inp_nome.value = "";
+            cardErro.style.display = "block"
+            mensagem_erro.innerHTML = "(Mensagem de erro para todos os campos em branco)";
+            return false;
+
+        } else if (emailVar == "") {
+            alert("(Digite seu email!)");
+            inp_email.value = "";
+            return false;
+        }
+        else if (emailVar.indexOf('@') == -1) {
+            alert("(Digite um email válido!)");
+            inp_email.value = "";
+            return false;
+        }
+        else if (assuntoVar == "") {
+            alert("(Digite o assunto!)");
+            inp_assunto.value = "";
+            return false;
+        }
+        console.log("Final das validações")
+
+
+
+        // Enviando o valor da nova input
+        fetch("/contato/cadastrar", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                // crie um atributo que recebe o valor recuperado aqui
+                // Agora vá para o arquivo routes/usuario.js
+                nomeServer: nomeVar,
+                emailServer: emailVar
+            })
+        }).then(function (resposta) {
+
+            console.log("quero ver essa resposta: ", resposta);
+            if (resposta.ok) {
+                fetch(`/contato/recuperarIdUsuario/"${nomeVar}"`, {
+                    method: "GET",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                })
+                    .then((respostaUsuario) => {
+                        console.log("resposta que ta vindo da segunda chamada a api", respostaUsuario)
+                        localStorage.setItem("idUsuario", respostaUsuario)
+                        // var idUsuario = localStorage.getItem(idUsuario);
+                    })
+                    .catch((erro) => {
+                        console.log("deu erro: ", erro)
+                    })
+
+                cardErro.style.display = "block";
+                geral.innerHTML = `
+            <div id="resul">
+            <h1>Obrigado!</h1>
+            <p><b>Seu email já foi enviado</b>.</p>
+            </div>`;
+                mensagem_erro.innerHTML = "Cadastro realizado com sucesso! Redirecionando para tela de Login...";
+                
+
+
+            } else {
+                throw ("Houve um erro ao tentar realizar o cadastro!");
+                alert(emailVar)
+            }
+        }).catch(function (resposta) {
+            console.log(`#ERRO: ${resposta}`);
+        });
+
+        return false;
+    }
+
+    function sumirMensagem() {
+        cardErro.style.display = "none"
+    }
+
+</script>
