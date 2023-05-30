@@ -281,3 +281,141 @@ hr {
 }
 
 /*Final da pesquisa*/
+/*Inicio dashboard parte 1*/
+.dashboard1{
+    background-image: url(../assets/img/pesquisa/fundoDashboard.png);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+/* .dashboard1 .central{
+    display: flex;
+    flex-direction: column;
+} */
+.dashboard1 .chart-container{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.dashboard1 .chart-container .tituloDash{
+    font-size: 4.5vh;
+    height: 25%;
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 5% ;
+}
+.dashboard1 .chart-container .tituloDash h1{
+    font-size: 10vh;
+    margin: 0.5vh;
+}
+.dashboard1 .chart-container .tituloDash p{
+    margin: 1vh;
+    margin-left: 4%;
+}
+.dashboard1 .chart-container .chart{
+    margin-bottom: 20vh;    
+    margin: 1vh 1vw 15vh 1vw;
+}
+
+.dashboard1 .kpi{
+    background-color: #FFB6C1;
+    width: 50%;
+    height: 100%;
+    border-radius: 3vw 0vw 0vw 3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.dashboard1 .kpi h1{
+    font-size: 10vh;
+    border-bottom: #000 0.5vh solid;
+    margin-bottom: 5%;
+}
+.dashboard1 .kpi .maxMin{
+    width: 80%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5%;
+}
+.dashboard1 .kpi .maxMin .maiorGenero{
+    width: 45%;
+    height: 100%;
+    background-color: aliceblue;
+    border: #000 solid 0.5vh;
+    margin-right: 5%;
+}
+.dashboard1 .kpi .maxMin .menorGenero{
+    width: 45%;
+    height: 100%;
+    background-color: aliceblue;
+    border: #000 solid 0.5vh;
+    margin-left: 5%;
+}
+.dashboard1 .kpi .base{
+    width: 80%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5%;
+}
+.dashboard1 .kpi .base .card1{
+    width: 50%;
+    height: 100%;
+    background-color: #ffffff;
+    border: #ffffff solid 0.5vh;
+    border-radius: 0.4vh;
+}
+.dashboard1 .kpi .base .card2{
+    width: 50%;
+    height: 100%;
+    background-color: #ffffff;
+    border: #ffffff solid 0.5vh;
+    border-left-color: #000;
+    border-radius: 0.4vh;
+}
+
+/*Final dashboard parte 1*/
+/*Inicio dashboard parte 2*/
+.dashboard2{
+    background-image: url(../assets/img/pesquisa/fundoDashboard.png);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+.dashboard2 .chart-container{
+    width: 50%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1%;
+}
+.dashboard2 .texto{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.dashboard2 .texto .lev h1{
+    font-size: 10vh;
+    margin: 0.5vh;
+}
+.dashboard2 .texto .lev p{
+    font-size: 5vh;
+    margin: 4vh;
+    margin-left: 4%;
+}
+.dashboard2 .texto .lev{
+    margin-bottom: 10%;
+}
+/*Final dashboard parte 2*/
