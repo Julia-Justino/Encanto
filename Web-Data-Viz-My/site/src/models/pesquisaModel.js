@@ -10,7 +10,7 @@ function listar() {
 
 function cadastrar(genero, autor, qtd) {
     var instrucao = `
-        INSERT INTO tbLivros ( genero, autor, qtdLivrosMes) VALUES ('${genero},${autor},${qtd}');
+        INSERT INTO tbLivros ( genero, autor, qtdLivrosMes) VALUES ('${genero}','${autor}','${qtd}');
     `;
     console.log("Executando a instrução SQL: \n" + instrucao);
     return database.executar(instrucao);
