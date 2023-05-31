@@ -197,12 +197,13 @@ hr {
 .formPesquisa .form h2{
     color: rgb(0, 0, 0);
     border-bottom: 0.4vh solid #000;
-    font-size: 9vh;
+    font-size: 8vh;
     margin: 8% auto;
+    text-align: center;
     
 }
 .formPesquisa .form p{
-    font-size: 6vh;
+    font-size: 4vh;
     color: rgb(0, 0, 0);
     margin: 5% 0% 0% 0%;
     width: 36vw;
@@ -210,14 +211,14 @@ hr {
 }
 .formPesquisa .form input{
     width: 95%;
-    height: 8%;
+    height: 12%;
     border-radius: 15vh;
     border-color: #ff8fb2;
 }
 .formPesquisa .form button{
     font-family: 'Comfortaa', cursive;
     width: 95%;
-    height: 13%;
+    height: 16%;
     margin-top: 9%;
     border-radius: 15vh;
     background-color: white;
