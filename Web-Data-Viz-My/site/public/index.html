@@ -290,8 +290,9 @@
         }).then(function (resposta) {
 
             console.log("quero ver essa resposta: ", resposta);
+            console.log(`Quero saber qual o nome desse usuario ${nomeVar}`)
             if (resposta.ok) {
-                fetch(`/contato/recuperarIdUsuario/"${nomeVar}"`, {
+                fetch(`/contato/recuperarIdUsuario/${nomeVar}`, {
                     method: "GET",
                     headers: {
                         "Content-Type": "application/json"

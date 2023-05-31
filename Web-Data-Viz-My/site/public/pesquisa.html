@@ -44,13 +44,13 @@
                 <div class="form">
                     <h2>Formulário de pesquisa</h2>
                     <p>Genêro favorito:</p>
-                    <input type="text" name="" id="" placeholder="Ex: Drama.">
+                    <input type="text" name="" id="inp_genero" placeholder="Ex: Drama.">
                     <p>Autor favorito do genêro:</p>
-                    <input type="text" name="" id="" placeholder="Ex: Neil Gaiman.">
+                    <input type="text" name="" id="inp_autor" placeholder="Ex: Neil Gaiman.">
                     <p>Quantos livros leiu mensalmente:</p>
-                    <input type="text" name="" id="" placeholder="Ex: 5 livros.">
+                    <input type="text" name="" id="inp_qtd" placeholder="Ex: 5 livros.">
                     <br>
-                    <button class="enviar">Enviar</button>
+                    <button class="enviar" onclick="cadastrar()">Enviar</button>
 
                 </div>
             </section>
@@ -213,4 +213,83 @@
         document.getElementById('myChart2'),
         configLine
     );
+
+
+    //---------------------------------------------------------- inicio da api Web---------------------------------------
+    function cadastrar() {
+//        aguardar();
+
+        //Recupere o valor da nova input pelo nome do id
+        // Agora vá para o método fetch logo abaixo
+
+        var generoVar = inp_genero.value;
+        var autorVar = inp_autor.value;
+        var qtdVar = inp_qtd.value;
+        /* var nomeVar = document.getElementById('inp_nome').value;
+        var emailVar = document.getElementById('inp_email').value;
+        var assuntoVar = document.getElementById('inp_assunto').value;
+     */
+
+        if (generoVar == "") {
+            alert("(Digite seu genêro favorito !)");
+            inp_genero.value = "";
+            cardErro.style.display = "block"
+            mensagem_erro.innerHTML = "(Mensagem de erro para todos os campos em branco)";
+            return false;
+
+        } else if (autorVar == "") {
+            alert("(Digite seu autor favorito!)");
+            inp_autor.value = "";
+            return false;
+        }
+        else if (qtdVar == "") {
+            alert("(Digite a quantidade mensal!)");
+            inp_qtd.value = "";
+            return false;
+        }
+        console.log("Final das validações")
+
+
+
+        // Enviando o valor da nova input
+        fetch("/pesquisa/cadastrar", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                // crie um atributo que recebe o valor recuperado aqui
+                // Agora vá para o arquivo routes/usuario.js
+                generoServer: generoVar,
+                autorServer: autorVar,
+                qtdServer:qtdVar
+            })
+        }).then(function (resposta) {
+
+            console.log("quero ver essa resposta: ", resposta);
+            if (resposta.ok) {
+                cardErro.style.display = "block";
+                geral.innerHTML = `
+            <div id="resul">
+            <h1>Obrigado!</h1>
+            <p><b>Seu email já foi enviado</b>.</p>
+            </div>`;
+                mensagem_erro.innerHTML = "Cadastro realizado com sucesso! Redirecionando para tela de Login...";
+                
+
+
+            } else {
+                throw ("Houve um erro ao tentar realizar o cadastro!");
+                alert(emailVar)
+            }
+        }).catch(function (resposta) {
+            console.log(`#ERRO: ${resposta}`);
+        });
+
+        return false;
+    }
+
+    function sumirMensagem() {
+        cardErro.style.display = "none"
+    }
 </script>
