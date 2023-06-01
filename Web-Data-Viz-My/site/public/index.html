@@ -42,7 +42,7 @@
             <div class="container">
 
                 <div class="tituloBlog">
-                    <h1><img src="./assets/img//tituloBlog.jpg" alt=""></h1>
+                    <h1><img src="./assets/img/tituloBlog.jpg" alt=""></h1>
                 </div>
                 <div class="textoBlog">
                     <div class="subTituloBlog">
@@ -154,7 +154,7 @@
                             <h1>Sobre livros</h1>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quae dolorum
                                 consectetur similique!</p>
-                            <button><a href="../html/post.html#livros">Saiba mais</a></button>
+                                <a href="./post.html#livros"> <button>Saiba mais</button></a>
                         </div>
                     </div>
                     <div class="card" id="cardMeio">
@@ -164,7 +164,7 @@
                             <h1>Sobre músicas</h1>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quae dolorum
                                 consectetur similique!</p>
-                            <button><a href="../html/post.html#musicas">Saiba mais</a></button>
+                                <a href="./post.html#musicas"> <button>Saiba mais</button></a>
                         </div>
                     </div>
                     <div class="card">
@@ -173,7 +173,7 @@
                             <h1>Sobre filmes</h1>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quae dolorum
                                 consectetur similique!</p>
-                            <button><a href="../html/post.html#filmes">Saiba mais</a></button>
+                                <a href="./post.html#filmes"> <button>Saiba mais</button></a>
                         </div>
                     </div>
                 </div>
@@ -292,7 +292,7 @@
             console.log("quero ver essa resposta: ", resposta);
             console.log(`Quero saber qual o nome desse usuario ${nomeVar}`)
             if (resposta.ok) {
-                fetch(`/contato/recuperarIdUsuario/${nomeVar}`, {
+                fetch(`/contato/recuperarIdUsuario/${nomeServer}`, {
                     method: "GET",
                     headers: {
                         "Content-Type": "application/json"

@@ -18,10 +18,9 @@
 
             <ul class="navbar">
                 <li><a href="#blog">Blog</a></li>
-                <li><a href="#conheca">Conheça</a></li>
-                <li><a href="#destaque">Destaques</a></li>
-                <li><a href="#pesquisa">Pesquisa</a></li>
-                <li><a href="#contato">Contato</a></li>
+                <li><a href="#votacao">Votação</a></li>
+                <li><a href="#pesquisa">Sobre</a></li>
+                <li><a href="#resultados">Resultados</a></li>
             </ul>
         </div>
         <!--Final do navbar-->
@@ -40,8 +39,8 @@
     <section class="blogEncanto">
 
         <div class="blog" id="blog">
-            <section class="formPesquisa">
-                <div class="form">
+            <section class="formPesquisa" >
+                <div class="form" id="geral">
                     <h2>Formulário de pesquisa</h2>
                     <p>Genêro favorito:</p>
                     <input type="text" name="" id="inp_genero" placeholder="Ex: Drama.">
@@ -55,7 +54,7 @@
                 </div>
             </section>
             <!--finalda div form para pesquisa-->
-            <div class="container">
+            <div class="container" id="votacao">
 
                 <div class="tituloBlog">
                     <h1><img src="./assets/img/pesquisa.png" alt=""></h1>
@@ -94,7 +93,7 @@
         <!--Final da pesquisa-->
         <!--Inicio dashboard parte 1-->
         <!--Inicio do gráfico-->
-        <div class="dashboard1">
+        <div class="dashboard1" id="resultados">
             <div class="chart-container">
                 <div class="tituloDash">
                     <h1>Por gênero</h1>
@@ -268,12 +267,9 @@
 
             console.log("quero ver essa resposta: ", resposta);
             if (resposta.ok) {
-                cardErro.style.display = "block";
-                geral.innerHTML = `
-            <div id="resul">
-            <h1>Obrigado!</h1>
-            <p><b>Seu email já foi enviado</b>.</p>
-            </div>`;
+                inp_genero.value ="";
+                inp_autor.value ="";
+                inp_qtd.value ="";
                 mensagem_erro.innerHTML = "Cadastro realizado com sucesso! Redirecionando para tela de Login...";
                 
 
@@ -292,4 +288,7 @@
     function sumirMensagem() {
         cardErro.style.display = "none"
     }
+    /*********************Plotar gráfico - api da Júlia ***********************/
+    let proximaAtualizacao;
+    window.onload = obterDadosGraficos();
 </script>
