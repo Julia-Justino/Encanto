@@ -12,11 +12,10 @@ router.post("/cadastrar", function (req, res) {
     contatoController.cadastrar(req, res);
 });
 
-router.get("/recuperarIdUsuario/:nome", function (req, res) {
+router.post("/recuperarIdUsuario/:nome", function (req, res) {
     // função a ser chamada quando acessar /carros/cadastrar
     contatoController.recuperarIdUsuario(req, res);
 });
-
 
 router.get("/listar", function (req, res) {
     // função a ser chamada quando acessar /carros/listar

@@ -34,8 +34,30 @@ function cadastrar(req, res) {
     contatoModel.cadastrar(nome, email)
     .then(
         function (resposta){
-        res.status(200)
-        .send("Carro criado com sucesso");
+            contatoModel.recuperarIdUsuario(nome).then(function(resposta){
+                if(resposta.ok){
+                    resposta.json().then(json => {
+                        console.log(json[0])
+                        var idUsuario = (json[0]);
+                        contatoModel.cadastrarEmail(idUsuario).then(function(resposta){
+                            if (resposta.ok) {
+                                console.log(5555555555555555555555555555);
+                
+                
+                            } else {
+                                throw ("Houve um erro ao tentar realizar o cadastro!");
+                                alert(emailVar)
+                            }
+                        }).catch(function (resposta) {
+                            console.log(`#ERRO: ${resposta}`);
+                        });
+                        })
+                    res.status(200)
+                .send("Carro criado com sucesso");
+                }
+                //res.status(200)
+                //.send("Carro criado com sucesso");
+            });
     }).catch(function(erro){
         res.status(500).json(erro.sqlMessage);
     })
