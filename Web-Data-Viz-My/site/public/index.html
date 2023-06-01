@@ -287,12 +287,12 @@
                 nomeServer: nomeVar,
                 emailServer: emailVar
             })
-        }).then(function (resposta) {
+        }).then(function (resposta, nome) {
 
             console.log("quero ver essa resposta: ", resposta);
             console.log(`Quero saber qual o nome desse usuario ${nomeVar}`)
             if (resposta.ok) {
-                fetch(`/contato/recuperarIdUsuario/${nomeServer}`, {
+                fetch(`/contato/recuperarIdUsuario/:${nome}`, {
                     method: "GET",
                     headers: {
                         "Content-Type": "application/json"
