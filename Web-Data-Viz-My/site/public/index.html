@@ -289,21 +289,8 @@
             console.log("quero ver essa resposta: ", resposta);
             console.log(`Quero saber qual o nome desse usuario ${nomeVar}`)
             if (resposta.ok) {
-                fetch(`/contato/recuperarIdUsuario/:${nome}`, {
-                    method: "GET",
-                    headers: {
-                        "Content-Type": "application/json"
-                    },
-                })
-                    .then((respostaUsuario) => {
-                        console.log("resposta que ta vindo da segunda chamada a api", respostaUsuario)
-                        localStorage.setItem("idUsuario", respostaUsuario)
-                        // var idUsuario = localStorage.getItem(idUsuario);
-                    })
-                    .catch((erro) => {
-                        console.log("deu erro: ", erro)
-                    })
-
+                
+                  
                 cardErro.style.display = "block";
                 geral.innerHTML = `
             <div id="resul">
