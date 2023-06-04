@@ -17,5 +17,8 @@ CREATE TABLE tbUsuario(
 	idUsuario INT PRIMARY KEY AUTO_INCREMENT,
     nomeUsuario VARCHAR(45),
     fkLivros INT,
-    FOREIGN KEY (fkLivros) REFERENCES tbLivros(idLivros)
+    FOREIGN KEY (fkLivros) REFERENCES tbLivros(idLivros), 
+    email VARCHAR(60)
 );
+SELECT * FROM tbUsuario;
+select * from tbLivros;
