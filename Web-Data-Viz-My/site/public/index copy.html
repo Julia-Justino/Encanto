@@ -154,7 +154,7 @@
                             <h1>Sobre livros</h1>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quae dolorum
                                 consectetur similique!</p>
-                                <a href="./post.html#livros"> <button>Saiba mais</button></a>
+                            <a href="./post.html#livros"> <button>Saiba mais</button></a>
                         </div>
                     </div>
                     <div class="card" id="cardMeio">
@@ -164,7 +164,7 @@
                             <h1>Sobre músicas</h1>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quae dolorum
                                 consectetur similique!</p>
-                                <a href="./post.html#musicas"> <button>Saiba mais</button></a>
+                            <a href="./post.html#musicas"> <button>Saiba mais</button></a>
                         </div>
                     </div>
                     <div class="card">
@@ -173,7 +173,7 @@
                             <h1>Sobre filmes</h1>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quae dolorum
                                 consectetur similique!</p>
-                                <a href="./post.html#filmes"> <button>Saiba mais</button></a>
+                            <a href="./post.html#filmes"> <button>Saiba mais</button></a>
                         </div>
                     </div>
                 </div>
@@ -219,7 +219,7 @@
                     <input type="text" id="inp_assunto" class="inpContato"
                         placeholder="EX. Tenho interesse em entrar em contato">
                     <br>
-                    <button onclick="cadastrar()">Enviar</button>
+                    <button onclick="cadastrar(); recuperarIdUsuario()">Enviar</button>
                     <div id="div_aguardar" class="loading-div">
 
                     </div>
@@ -234,15 +234,19 @@
 </html>
 <script>
     var usuCont = 0;
+    var nomeVar;
+    var emailVar;
+    var assuntoVar;
     function cadastrar() {
         aguardar();
 
         //Recupere o valor da nova input pelo nome do id
         // Agora vá para o método fetch logo abaixo
 
-        var nomeVar = inp_nome.value;
-        var emailVar = inp_email.value;
-        var assuntoVar = inp_assunto.value;
+         nomeVar = inp_nome.value;
+         emailVar = inp_email.value;
+         assuntoVar = inp_assunto.value;  
+         
         alert(emailVar)
         /* var nomeVar = document.getElementById('inp_nome').value;
         var emailVar = document.getElementById('inp_email').value;
@@ -287,26 +291,11 @@
                 nomeServer: nomeVar,
                 emailServer: emailVar
             })
-        }).then(function (resposta, nome) {
+        }).then(function (resposta) {
 
             console.log("quero ver essa resposta: ", resposta);
             console.log(`Quero saber qual o nome desse usuario ${nomeVar}`)
             if (resposta.ok) {
-                fetch(`/contato/recuperarIdUsuario/:${nome}`, {
-                    method: "GET",
-                    headers: {
-                        "Content-Type": "application/json"
-                    },
-                })
-                    .then((respostaUsuario) => {
-                        console.log("resposta que ta vindo da segunda chamada a api", respostaUsuario)
-                        localStorage.setItem("idUsuario", respostaUsuario)
-                        // var idUsuario = localStorage.getItem(idUsuario);
-                    })
-                    .catch((erro) => {
-                        console.log("deu erro: ", erro)
-                    })
-
                 cardErro.style.display = "block";
                 geral.innerHTML = `
             <div id="resul">
@@ -314,7 +303,7 @@
             <p><b>Seu email já foi enviado</b>.</p>
             </div>`;
                 mensagem_erro.innerHTML = "Cadastro realizado com sucesso! Redirecionando para tela de Login...";
-                
+
 
 
             } else {
@@ -328,8 +317,71 @@
         return false;
     }
 
+
+
+    function recuperarIdUsuario(nome) {
+        aguardar();
+    
+
+        //Recupere o valor da nova input pelo nome do id
+        // Agora vá para o método fetch logo abaixo
+
+    
+        console.log("Antes de entrar no GET, fé que vai");
+        // Enviando o valor da nova input
+        fetch(`/contato/recuperarIdUsuario/:${nome}`, {
+            method: "GET",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                // crie um atributo que recebe o valor recuperado aqui
+                // Agora vá para o arquivo routes/usuario.js
+                nomeServer: nomeVar,
+            })
+        }).then(function (resposta) {
+
+            console.log("quero ver essa resposta: ", resposta);
+            console.log(`Quero saber qual o nome desse usuario ${nome}`)
+            if (resposta.ok) {
+                console.log(`Sim deu certo, fique feliz!`)
+
+            } else {
+                throw ("Houve um erro ao tentar realizar o cadastro!");
+                console.log("Se fudeu, não foi")
+            }
+        }).catch(function (resposta) {
+            console.log(`#ERRO: ${resposta}`);
+        });
+
+        return false;
+    }
+
+
+
+
     function sumirMensagem() {
         cardErro.style.display = "none"
     }
 
+
+
+  
+    
 </script>
+
+<!--   fetch(`/contato/recuperarIdUsuario/${nomeServer}`, {
+                    method: "GET",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                })
+                    .then((respostaUsuario) => {
+                        console.log("resposta que ta vindo da segunda chamada a api", respostaUsuario)
+                        localStorage.setItem("idUsuario", respostaUsuario)
+                        // var idUsuario = localStorage.getItem(idUsuario);
+                    })
+                    .catch((erro) => {
+                        console.log("deu erro: ", erro)
+                    })
+                 -->
