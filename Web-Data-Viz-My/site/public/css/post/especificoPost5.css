@@ -2,23 +2,26 @@
     flex: 0 0 200vh;
     width: 80vw;
     height: auto;
-    background-color: #000755fc;
-    color: rgb(255, 255, 255);
+    background-color: #fce09a;
+    color: rgb(0, 0, 0);
     font-size: 30px;
     display: flex;
     align-items: center;
     scroll-snap-align: end;
 }
 .scroller>div:nth-child(2n) {
-    background-image: url(../../assets/img/post/coraline/fundo2.png);
-    color: #000000;
+    background-image: url(../../assets/img/post/porSol/fundinho.png);
+   
 }
 .scroller>div:nth-child(2n) .texto{
-    width: 83%;
+    background-color: rgba(0, 0, 0, 0.779);
+    color: white;
+    margin-left: 5.5vw;
+    height: 90%;
 }
 .navbar {
     display: flex;
-    background-color: #062899;
+    background-color: #fcba04;
     flex-direction: column;
     height: 100vh;
     justify-content: space-around;
@@ -30,7 +33,8 @@
 .navbar:hover {
     transition: 1.8s;
     margin: 0%;
-    background-color: #173f83;
+    background-color: #fe8504;
+    color: white;
 }
 .textoIrmaoUrso img {
     background-size: cover;
@@ -43,11 +47,11 @@
 }
 .sobre .texto button{
     margin: 0%;
-    border: 0.4vh solid #010f56;
+    border: 0.4vh solid #ffd209;
     transition: 1.5s;
 }
 .sobre .texto button:hover{
-    background-color: #001e5f;
+    background-color: #da4505;
     font-size: 3vh;
     transition: 2s;
     color: #fff;
@@ -57,4 +61,5 @@
 }
 .texto{
     margin-left: 7.5vw;
+   
 }

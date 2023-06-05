@@ -331,56 +331,13 @@ hr {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 .dashboard1 .kpi h1{
     font-size: 10vh;
     border-bottom: #000 0.5vh solid;
     margin-bottom: 5%;
 }
-.dashboard1 .kpi .maxMin{
-    width: 80%;
-    height: 20%;
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 5%;
-}
-.dashboard1 .kpi .maxMin .maiorGenero{
-    width: 45%;
-    height: 100%;
-    background-color: aliceblue;
-    border: #000 solid 0.5vh;
-    margin-right: 5%;
-}
-.dashboard1 .kpi .maxMin .menorGenero{
-    width: 45%;
-    height: 100%;
-    background-color: aliceblue;
-    border: #000 solid 0.5vh;
-    margin-left: 5%;
-}
-.dashboard1 .kpi .base{
-    width: 80%;
-    height: 20%;
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 5%;
-}
-.dashboard1 .kpi .base .card1{
-    width: 50%;
-    height: 100%;
-    background-color: #ffffff;
-    border: #ffffff solid 0.5vh;
-    border-radius: 0.4vh;
-}
-.dashboard1 .kpi .base .card2{
-    width: 50%;
-    height: 100%;
-    background-color: #ffffff;
-    border: #ffffff solid 0.5vh;
-    border-left-color: #000;
-    border-radius: 0.4vh;
-}
-
 /*Final dashboard parte 1*/
 /*Inicio dashboard parte 2*/
 .dashboard2{
@@ -420,3 +377,30 @@ hr {
     margin-bottom: 10%;
 }
 /*Final dashboard parte 2*/
+.textoPI{
+    font-weight:800;
+    width: 90%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.kpi_texto{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5vh;
+}
+.txt{
+    color: #FF0051;
+    font-size: 5vh;
+}
+#habla{
+
+    color: #000;
+    font-size: 5vh;
+    text-align: center;
+}
+#vamos{
+    height: 55%;
+    width: 45%;
+    margin-top: 10%;
+}
