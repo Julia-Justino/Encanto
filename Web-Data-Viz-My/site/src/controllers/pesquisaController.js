@@ -29,8 +29,20 @@ function cadastrar(req, res) {
         res.status(500).json(erro.sqlMessage);
     })
 }
-
+function consultarDados(req, res) {
+    pesquisaModel.consultarDados()
+        .then(function (resultado) {
+            res.json(resultado)
+        }).catch(function (erro) {
+            console.log('Erro ao consultar os dados!' + erro)
+            console.log(
+                "\nHouve um erro ao realizar a consulta! Erro: ",
+                erro.sqlMessage
+            );
+        })
+}
 module.exports = {
     listar,
-    cadastrar
+    cadastrar,
+    consultarDados
 }
