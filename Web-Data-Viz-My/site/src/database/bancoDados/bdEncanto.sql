@@ -141,4 +141,11 @@ INSERT INTO tbLivros (genero, autor, qtdLivrosMes) VALUES
     (select count(genero) from tbLivros where genero = 'Comédia')Comédia,
      (select count(genero) from tbLivros where genero = 'Ficção')Ficção;
   
-  
+  CREATE VIEW viewUsuario
+AS
+SELECT nomeUsuario, email
+FROM tbUsuario;
+desc tbLivros;
+CREATE VIEW viewLivros AS SELECT genero, autor, qtdLivrosMes FROM tbLivros;
+SELECT * FROM viewLivros; 
+SELECT * FROM viewUsuario;
