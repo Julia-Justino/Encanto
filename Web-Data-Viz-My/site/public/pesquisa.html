@@ -191,8 +191,7 @@
                 inp_autor.value = "";
                 inp_qtd.value = "";
                 mensagem_erro.innerHTML = "Cadastro realizado com sucesso! Redirecionando para tela de Login...";
-
-
+                location.reload();
 
             } else {
                 throw ("Houve um erro ao tentar realizar o cadastro!");
@@ -321,7 +320,7 @@
         kpi.innerHTML +=
         `
         <div class="textoPI">
-            <p class ="kpi_texto">O gênero com a menor quantidade de votos foi ${generoMenor}, com o total de ${maiorVoto} votos, essa quantidade representa <span class="txt"> ${((menorVoto/soma)*100).toFixed(1)}%</span> da quantidade total de votos</p>    
+            <p class ="kpi_texto">O gênero com a menor quantidade de votos foi ${generoMenor}, com o total de ${menorVoto} votos, essa quantidade representa <span class="txt"> ${((menorVoto/soma)*100).toFixed(1)}%</span> da quantidade total de votos</p>    
         <div>
         `
     }
